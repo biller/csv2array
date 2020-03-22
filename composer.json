@@ -3,7 +3,7 @@
   "type": "library",
   "require": {
     "php": "^7.0",
-    "league/csv": "^9.6"
+    "league/csv": "^9.0"
   },
   "require-dev": {
     "codeception/codeception": "^4.1",
