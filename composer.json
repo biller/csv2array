@@ -1,0 +1,22 @@
+{
+  "name": "biller/csv2array",
+  "type": "library",
+  "require": {
+    "php": "^7.0",
+    "league/csv": "^9.6"
+  },
+  "require-dev": {
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Juan Sorondo",
+      "email": "juan@biller.uy"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "biller\\csv2array\\": "src/"
+    }
+  }
+}
