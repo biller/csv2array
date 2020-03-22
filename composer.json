@@ -6,6 +6,8 @@
     "league/csv": "^9.6"
   },
   "require-dev": {
+    "codeception/codeception": "^4.1",
+    "codeception/module-asserts": "^1.0.0"
   },
   "license": "MIT",
   "authors": [
