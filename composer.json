@@ -2,7 +2,7 @@
   "name": "biller/csv2array",
   "type": "library",
   "require": {
-    "php": "^7.0",
+    "php": "^7.0 || ^8.0",
     "league/csv": "^9.0"
   },
   "require-dev": {
