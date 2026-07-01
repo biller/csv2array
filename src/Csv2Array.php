@@ -8,7 +8,7 @@ class Csv2Array
 {
     public static function convert(string $file, bool $headers = true)
     {
-        $csv = Reader::createFromPath($file);
+        $csv = Reader::from($file);
         if ($headers) {
             $csv->setHeaderOffset(0);
         }
