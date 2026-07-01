@@ -4,22 +4,17 @@ on: push
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
-    strategy:
-      matrix:
-        php: [ 7.4, 8.0 ]
+    runs-on: ubuntu-24.04
     steps:
     - name: Install PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: ${{ matrix.php }}
+        php-version: 8.4
 
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 1
+    - uses: actions/checkout@v7
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress --no-suggest
 
     - name: Run tests
-      run: vendor/bin/codecept run
+      run: vendor/bin/phpunit --testdox tests
